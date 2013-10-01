@@ -1,31 +1,83 @@
 @import "compass";
-@import "compass/css3/border-radius";
+@import "compass/reset";
+@import "compass/typography/lists/horizontal-list";
+@import "recipes/background/carbon-fiber";
 
+
+@function black($opacity){
+  @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+  @return rgba(255,255,255,$opacity)
+}
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
 
 body {
-width: 1280px;
-height: 1024px;
-@include background-image(linear-gradient(bottom, #0347a7 0%, rgba(3,71,168,0) 100%)); // layer fill content
+width: 1600px;
+height: 1500px;
+ @include background-carbon-fiber;
+
+ // @include background-image(linear-gradient(bottom, #f3fbe9 0%, #d5f6a7 100%)); //
 
 }
-.bouton {
-  font-size: 4em;
-  padding: 8px 13px;
+.box{
+  font-family: verdana;
+font-size: 1.3em;
+width: 1300px;
+margin: 22% 22% ;
+position: fixed;
 
-  color: #fff;
-  font-family: "Myriad Pro", sans-serif;
+}
+nav a {
+display: inline-block;
+width: 260px;
+padding: 20px 0 20px 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+color: white;
+background: #353535;
+border-radius: 6px;
+-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+-ms-transition: background 0.3s linear;
+transition: background 0.3s linear;
+}
+
+nav a:hover {
+background: #0090ff;
+
+}
+a {
+color: #0090ff;
+text-decoration: none;
+transition: color 0.5s ease;
+transition: text-shadow 0.5s ease;
+-webkit-transition: color 0.5s ease;
+-webkit-transition: text-shadow 0.5s ease;
+-moz-transition: color 0.5s ease;
+-moz-transition: text-shadow 0.5s ease;
+-o-transition: color 0.5s ease;
+-o-transition: text-shadow 0.5s ease;
+-ms-transition: color 0.5s ease;
+-ms-transition: text-shadow 0.5s ease;
+}
+
+.text{
+  color: white;
+  margin: auto;
+  padding: 30px;
+
+}
+.letterRed{
+  color:#FF0000;
   font-weight: bold;
-  border-radius: 30px;
-@include background-image(linear-gradient(bottom, #048d85 0%, #08b59b 35.35%, #d7e5c3 100%));
-.bouton:hover{
-    background-color:green;
-    padding: 50px;
+  font-size: 1.1em;
+
 }
-}
-.header{
-  margin: 0;
-  width: 800px;
-  height: 200px;
-  @include box-shadow(0 5px 5px rgba(0,0,0,.75));
-  @include background-image(linear-gradient(bottom, #008dcd 0%, #2fa5dd 39.99%, #5bb7e7 40.99%, #3a8dcb 100%));
-}
+

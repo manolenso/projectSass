@@ -1,45 +1,140 @@
-/* line 5, C:/wamp/www/projectSass/sass/style.scss */
-body {
-  width: 1280px;
-  height: 1024px;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0347a7), color-stop(100%, rgba(3, 71, 168, 0)));
-  background-image: -webkit-linear-gradient(bottom, #0347a7 0%, rgba(3, 71, 168, 0) 100%);
-  background-image: -moz-linear-gradient(bottom, #0347a7 0%, rgba(3, 71, 168, 0) 100%);
-  background-image: -o-linear-gradient(bottom, #0347a7 0%, rgba(3, 71, 168, 0) 100%);
-  background-image: linear-gradient(bottom, #0347a7 0%, rgba(3, 71, 168, 0) 100%);
-}
-
-/* line 11, C:/wamp/www/projectSass/sass/style.scss */
-.bouton {
-  font-size: 4em;
-  padding: 8px 13px;
-  color: #fff;
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: bold;
-  border-radius: 30px;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #048d85), color-stop(35.35%, #08b59b), color-stop(100%, #d7e5c3));
-  background-image: -webkit-linear-gradient(bottom, #048d85 0%, #08b59b 35.35%, #d7e5c3 100%);
-  background-image: -moz-linear-gradient(bottom, #048d85 0%, #08b59b 35.35%, #d7e5c3 100%);
-  background-image: -o-linear-gradient(bottom, #048d85 0%, #08b59b 35.35%, #d7e5c3 100%);
-  background-image: linear-gradient(bottom, #048d85 0%, #08b59b 35.35%, #d7e5c3 100%);
-}
-/* line 20, C:/wamp/www/projectSass/sass/style.scss */
-.bouton .bouton:hover {
-  background-color: green;
-  padding: 50px;
-}
-
-/* line 25, C:/wamp/www/projectSass/sass/style.scss */
-.header {
+/* line 17, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  width: 800px;
-  height: 200px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #008dcd), color-stop(39.99%, #2fa5dd), color-stop(40.99%, #5bb7e7), color-stop(100%, #3a8dcb));
-  background-image: -webkit-linear-gradient(bottom, #008dcd 0%, #2fa5dd 39.99%, #5bb7e7 40.99%, #3a8dcb 100%);
-  background-image: -moz-linear-gradient(bottom, #008dcd 0%, #2fa5dd 39.99%, #5bb7e7 40.99%, #3a8dcb 100%);
-  background-image: -o-linear-gradient(bottom, #008dcd 0%, #2fa5dd 39.99%, #5bb7e7 40.99%, #3a8dcb 100%);
-  background-image: linear-gradient(bottom, #008dcd 0%, #2fa5dd 39.99%, #5bb7e7 40.99%, #3a8dcb 100%);
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, ../sass/style.scss */
+body {
+  width: 1600px;
+  height: 1500px;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, #111111), color-stop(100%, rgba(4, 4, 4, 0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, #111111), color-stop(100%, rgba(4, 4, 4, 0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -webkit-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px), -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px);
+  background-image: -moz-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -moz-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -moz-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px), -moz-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px);
+  background-image: -o-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -o-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -o-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px), -o-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px);
+  background-image: radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px), radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px);
+  background-repeat: repeat;
+  background-position: 0 0, 8px 8px, 0 1px, 8px 9px;
+  background-color: #222222;
+  background-size: 16px 16px;
+}
+
+/* line 28, ../sass/style.scss */
+.box {
+  font-family: verdana;
+  font-size: 1.3em;
+  width: 1300px;
+  margin: 22% 22%;
+  position: fixed;
+}
+
+/* line 36, ../sass/style.scss */
+nav a {
+  display: inline-block;
+  width: 260px;
+  padding: 20px 0 20px 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background: #353535;
+  border-radius: 6px;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
+
+/* line 52, ../sass/style.scss */
+nav a:hover {
+  background: #0090ff;
+}
+
+/* line 56, ../sass/style.scss */
+a {
+  color: #0090ff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+/* line 71, ../sass/style.scss */
+.text {
+  color: white;
+  margin: auto;
+  padding: 30px;
+}
+
+/* line 77, ../sass/style.scss */
+.letterRed {
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 1.1em;
 }
