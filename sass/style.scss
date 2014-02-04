@@ -2,6 +2,7 @@
 @import "compass/reset";
 @import "compass/typography/lists/horizontal-list";
 @import "recipes/background/carbon-fiber";
+@import "compass/css3/inline-block";
 
 
 @function black($opacity){
@@ -22,20 +23,30 @@
 body {
   width: 1600px;
   height: 1500px;
+  margin:0 auto;
   @include background-carbon-fiber;
 
  // @include background-image(linear-gradient(bottom, #f3fbe9 0%, #d5f6a7 100%)); //
 
 }
 .box{
+  text-align: center;
   @include letterpress;
   font-family: verdana;
   font-size: 1.1em;
   width: 1200px;
-  margin: 3% 3% ;
-  position: fixed;
+  margin: 20px;
+  position: float;
+  display: inline-block;
+
 
 }
+.redtext {
+  @extend .box;
+  color:#FF0000;
+  font-weight: bold;
+}
+
 nav a {
   display: inline-block;
   width: 300px;
@@ -79,10 +90,12 @@ a {
   padding: 30px;
 
 }
-.letterRed{
-  color:#FF0000;
-  font-weight: bold;
-  font-size: 1.1em;
 
+
+
+test {
+
+@include background-image(linear-gradient(top, #bee9e6 0%, #083e72 50%, #00060c 100%)); // layer fill content
+@include box-shadow(0 7px 26px 6px #000); // drop shadow
 }
 

@@ -1,4 +1,4 @@
-/* line 17, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,53 +20,54 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 23, C:/wamp/www/projectSass/sass/style.scss */
 body {
   width: 1600px;
   height: 1500px;
+  margin: 0 auto;
   background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, #111111), color-stop(100%, rgba(4, 4, 4, 0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, #111111), color-stop(100%, rgba(4, 4, 4, 0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 3, color-stop(66.66667%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -webkit-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px), -webkit-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px);
   background-image: -moz-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -moz-radial-gradient(#111111 2px, rgba(4, 4, 4, 0) 3px), -moz-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px), -moz-radial-gradient(rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0) 3px);
@@ -78,17 +79,25 @@ body {
   background-size: 16px 16px;
 }
 
-/* line 30, ../sass/style.scss */
-.box {
+/* line 32, C:/wamp/www/projectSass/sass/style.scss */
+.box, .redtext {
+  text-align: center;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   font-family: verdana;
   font-size: 1.1em;
   width: 1200px;
-  margin: 3% 3%;
-  position: fixed;
+  margin: 20px;
+  position: float;
+  display: inline-block;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 44, C:/wamp/www/projectSass/sass/style.scss */
+.redtext {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* line 50, C:/wamp/www/projectSass/sass/style.scss */
 nav a {
   display: inline-block;
   width: 300px;
@@ -105,12 +114,12 @@ nav a {
   transition: background 0.3s linear;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 66, C:/wamp/www/projectSass/sass/style.scss */
 nav a:hover {
   background: #0090ff;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 70, C:/wamp/www/projectSass/sass/style.scss */
 a {
   -webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
@@ -129,16 +138,21 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 87, C:/wamp/www/projectSass/sass/style.scss */
 .text {
   color: white;
   margin: auto;
   padding: 30px;
 }
 
-/* line 82, ../sass/style.scss */
-.letterRed {
-  color: #FF0000;
-  font-weight: bold;
-  font-size: 1.1em;
+/* line 96, C:/wamp/www/projectSass/sass/style.scss */
+test {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bee9e6), color-stop(50%, #083e72), color-stop(100%, #00060c));
+  background-image: -webkit-linear-gradient(top, #bee9e6 0%, #083e72 50%, #00060c 100%);
+  background-image: -moz-linear-gradient(top, #bee9e6 0%, #083e72 50%, #00060c 100%);
+  background-image: -o-linear-gradient(top, #bee9e6 0%, #083e72 50%, #00060c 100%);
+  background-image: linear-gradient(top, #bee9e6 0%, #083e72 50%, #00060c 100%);
+  -webkit-box-shadow: 0 7px 26px 6px black;
+  -moz-box-shadow: 0 7px 26px 6px black;
+  box-shadow: 0 7px 26px 6px black;
 }
